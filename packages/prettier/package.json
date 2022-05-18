@@ -1,0 +1,11 @@
+{
+    "name": "apteryx-prettier-config",
+    "version": "1.0.0",
+    "description": "Prettier configuration for all Apteryx created projects",
+    "license": "MIT",
+    "main": "index.js",
+    "packageManager": "yarn@3.2.1",
+    "dependencies": {
+        "prettier": "^2.6.2"
+    }
+}

@@ -1,0 +1,7 @@
+{
+    "name": "apteryx-config",
+    "private": true,
+    "workspaces": [
+        "packages/*"
+    ]
+}

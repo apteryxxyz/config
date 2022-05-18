@@ -1,0 +1,12 @@
+{
+    "name": "apteryx-eslint-config",
+    "version": "1.0.0",
+    "description": "ESLint configuration for all Apteryx created projects",
+    "license": "MIT",
+    "main": "index.js",
+    "packageManager": "yarn@3.2.1",
+    "dependencies": {
+        "@sapphire/eslint-config": "^4.3.5",
+        "deepmerge": "^4.2.2"
+    }
+}
