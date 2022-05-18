@@ -3,5 +3,10 @@
     "private": true,
     "workspaces": [
         "packages/*"
-    ]
+    ],
+    "prettier": "apteryx-prettier-config",
+    "devDependencies": {
+        "apteryx-eslint-config": "workspace:^",
+        "apteryx-prettier-config": "workspace:^"
+    }
 }

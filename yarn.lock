@@ -255,10 +255,13 @@ __metadata:
 "apteryx-config@workspace:.":
   version: 0.0.0-use.local
   resolution: "apteryx-config@workspace:."
+  dependencies:
+    apteryx-eslint-config: "workspace:^"
+    apteryx-prettier-config: "workspace:^"
   languageName: unknown
   linkType: soft
 
-"apteryx-eslint-config@workspace:packages/eslint":
+"apteryx-eslint-config@workspace:^, apteryx-eslint-config@workspace:packages/eslint":
   version: 0.0.0-use.local
   resolution: "apteryx-eslint-config@workspace:packages/eslint"
   dependencies:
@@ -267,7 +270,7 @@ __metadata:
   languageName: unknown
   linkType: soft
 
-"apteryx-prettier-config@workspace:packages/prettier":
+"apteryx-prettier-config@workspace:^, apteryx-prettier-config@workspace:packages/prettier":
   version: 0.0.0-use.local
   resolution: "apteryx-prettier-config@workspace:packages/prettier"
   dependencies:
