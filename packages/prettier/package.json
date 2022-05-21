@@ -1,6 +1,6 @@
 {
     "name": "apteryx-prettier-config",
-    "version": "1.0.0",
+    "version": "1.0.1",
     "description": "Prettier configuration for all Apteryx created projects",
     "license": "MIT",
     "main": "index.js",
