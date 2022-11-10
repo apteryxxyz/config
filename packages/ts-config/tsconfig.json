@@ -1,0 +1,60 @@
+{
+    "compileOnSave": true,
+    "compilerOptions": {
+        // Type Checking
+        "allowUnreachableCode": false,
+        "allowUnusedLabels": false,
+        "alwaysStrict": true,
+        "exactOptionalPropertyTypes": false,
+        "noFallthroughCasesInSwitch": true,
+        "noImplicitAny": true,
+        "noImplicitOverride": true,
+        "noImplicitReturns": true,
+        "noImplicitThis": true,
+        "noPropertyAccessFromIndexSignature": true,
+        "noUncheckedIndexedAccess": false,
+        "noUnusedLocals": true,
+        "noUnusedParameters": true,
+        "strict": true,
+        "strictBindCallApply": true,
+        "strictFunctionTypes": true,
+        "strictNullChecks": true,
+        "strictPropertyInitialization": true,
+        "useUnknownInCatchVariables": true,
+        // Module
+        "module": "commonjs",
+        "moduleResolution": "node",
+        // Emit
+        "declaration": true,
+        "downlevelIteration": true,
+        "importHelpers": false,
+        "importsNotUsedAsValues": "remove",
+        "inlineSourceMap": false,
+        "inlineSources": false,
+        "newLine": "lf",
+        "noEmit": false,
+        "noEmitHelpers": false,
+        "noEmitOnError": true,
+        "preserveConstEnums": true,
+        "removeComments": false,
+        "sourceMap": true,
+        "stripInternal": true,
+        // JavaScript Support
+        "allowJs": true,
+        "checkJs": false,
+        "maxNodeModuleJsDepth": 0,
+        // Interop Constraints
+        "allowSyntheticDefaultImports": true,
+        "forceConsistentCasingInFileNames": true,
+        // Language and Environment
+        "emitDecoratorMetadata": true,
+        "experimentalDecorators": true,
+        "lib": [
+            "esnext"
+        ],
+        "target": "esnext",
+        "useDefineForClassFields": true,
+        // Completeness
+        "skipLibCheck": true
+    }
+}

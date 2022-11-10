@@ -1,0 +1,7 @@
+{
+	"name": "config-apteryx",
+	"devDependencies": {
+		"eslint": "^8.27.0",
+		"prettier": "^2.7.1"
+	}
+}

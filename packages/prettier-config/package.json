@@ -1,0 +1,34 @@
+{
+    "name": "prettier-config-apteryx",
+    "description": "prettier configuration for all Apteryx projects",
+    "version": "2.0.0",
+    "author": {
+        "name": "ApteryxXYZ",
+        "email": "kiaora@apteryx.xyz"
+    },
+    "repository": {
+        "type": "git",
+        "url": "git+https://github.com/apteryxxyz/config",
+        "directory": "packages/prettier-config"
+    },
+    "bugs": {
+        "url": "https://github.com/apteryxxyz/config/issues"
+    },
+    "type": "commonjs",
+    "main": "./index.js",
+    "files": [
+        "*.js"
+    ],
+    "license": "MIT",
+    "keywords": [
+        "prettier",
+        "config",
+        "prettierconfig",
+        "lint",
+        "linter",
+        "next",
+        "prettier",
+        "react",
+        "typescript"
+    ]
+}
