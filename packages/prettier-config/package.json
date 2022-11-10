@@ -1,6 +1,6 @@
 {
     "name": "prettier-config-apteryx",
-    "description": "prettier configuration for all Apteryx projects",
+    "description": "Prettier configuration for all Apteryx projects",
     "version": "2.0.0",
     "author": {
         "name": "ApteryxXYZ",
