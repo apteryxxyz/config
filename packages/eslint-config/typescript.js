@@ -21,7 +21,7 @@ module.exports = {
 	parserOptions: {
 		project: './tsconfig.json'
 	},
-	plugins: ['@typescript-eslint', 'import', 'jsdoc', 'n', 'sonarjs', 'tsdoc', 'typescript-sort-keys'],
+	plugins: ['@typescript-eslint', 'import', 'jsdoc', 'n', 'sonarjs', 'typescript-sort-keys'],
 	rules: {
 		'@typescript-eslint/adjacent-overload-signatures': 2,
 		'@typescript-eslint/array-type': [
