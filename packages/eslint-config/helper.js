@@ -10,22 +10,16 @@ function getParentRoot() {
     const pathParts = thisPath.split(sep)
         .map((p, i) => i === 0 ? p : sep + p);
 
-    let currentPath = '', foundRoot = false;
+    let currentPath = '';
 
     for (const part of pathParts) {
         currentPath += part;
 
         try {
-            if (findPath(currentPath)) {
-                foundRoot = true;
-                break;
-            }
+            if (findPath(currentPath)) break;
         } catch (error) {
-            if (error.message.includes('Cannot find module'))
-                foundRoot = true;
-            else
-                throw error;
-            break;
+            if (error.message.includes('Cannot find module')) break;
+            else throw error;
         }
     }
 
