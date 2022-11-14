@@ -2,29 +2,7 @@
  * Get the root directory of the parent project.
  * @returns {string}
  */
-function getParentRoot() {
-    const { _findPath: findPath } = require('node:module');
-    const { dirname, sep } = require('node:path');
-
-    const thisPath = dirname(module.filename);
-    const pathParts = thisPath.split(sep)
-        .map((p, i) => i === 0 ? p : sep + p);
-
-    let currentPath = '';
-
-    for (const part of pathParts) {
-        currentPath += part;
-
-        try {
-            if (findPath(currentPath)) break;
-        } catch (error) {
-            if (error.message.includes('Cannot find module')) break;
-            else throw error;
-        }
-    }
-
-    return currentPath;
-}
+const getParentRoot = () => require('app-root-path').toString();
 
 /**
  * Get the package.json content of the parent project.
@@ -56,7 +34,10 @@ function determineAddDependencyScript() {
     else if (existsSync(join(root, 'yarn.lock')))
         return ['yarn', 'add -D'];
     else if (existsSync(join(root, 'pnpm-lock.yaml')))
-        return ['pnpm', 'add -D'];
+        if (existsSync(join(root, 'pnpm-workspace.yaml')))
+            return ['pnpm', 'add -Dw'];
+        else
+            return ['pnpm', 'add -D'];
     else
         return [null, null];
 }

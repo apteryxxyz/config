@@ -2,29 +2,7 @@
  * Get the root directory of the parent project.
  * @returns {string}
  */
- function getParentRoot() {
-    const { _findPath: findPath } = require('node:module');
-    const { dirname, sep } = require('node:path');
-
-    const thisPath = dirname(module.filename);
-    const pathParts = thisPath.split(sep)
-        .map((p, i) => i === 0 ? p : sep + p);
-
-    let currentPath = '';
-
-    for (const part of pathParts) {
-        currentPath += part;
-
-        try {
-            if (findPath(currentPath)) break;
-        } catch (error) {
-            if (error.message.includes('Cannot find module')) break;
-            else throw error;
-        }
-    }
-
-    return currentPath;
-}
+const getParentRoot = () => require('app-root-path').toString();
 
 /**
  * Modify the Prettier module code to meet the needs this.
