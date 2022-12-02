@@ -4,8 +4,7 @@ require('./helper').ensureDependencies([
 	'eslint-plugin-jsdoc',
 	'eslint-plugin-import',
 	'eslint-plugin-n',
-	'eslint-plugin-sonarjs',
-	'eslint-plugin-typescript-sort-keys'
+	'eslint-plugin-sonarjs'
 ]);
 
 module.exports = {
@@ -21,7 +20,7 @@ module.exports = {
 	parserOptions: {
 		project: './tsconfig.json'
 	},
-	plugins: ['@typescript-eslint', 'import', 'jsdoc', 'n', 'sonarjs', 'typescript-sort-keys'],
+	plugins: ['@typescript-eslint', 'import', 'jsdoc', 'n', 'sonarjs'],
 	rules: {
 		'@typescript-eslint/adjacent-overload-signatures': 2,
 		'@typescript-eslint/array-type': [
@@ -110,7 +109,7 @@ module.exports = {
 		'@typescript-eslint/no-dynamic-delete': 0,
 		'@typescript-eslint/no-empty-function': 0,
 		'@typescript-eslint/no-empty-interface': 0,
-		'@typescript-eslint/no-explicit-any': 0,
+		'@typescript-eslint/no-explicit-any': 2,
 		'@typescript-eslint/no-extra-non-null-assertion': 2,
 		'@typescript-eslint/no-extraneous-class': 0,
 		'@typescript-eslint/no-floating-promises': [
@@ -203,7 +202,7 @@ module.exports = {
 		'@typescript-eslint/prefer-return-this-type': 2,
 		'@typescript-eslint/prefer-string-starts-ends-with': 2,
 		'@typescript-eslint/prefer-ts-expect-error': 2,
-		'@typescript-eslint/promise-function-async': 2,
+		'@typescript-eslint/promise-function-async': 0,
 		'@typescript-eslint/require-array-sort-compare': [
 			2,
 			{
@@ -213,7 +212,7 @@ module.exports = {
 		'@typescript-eslint/restrict-plus-operands': 2,
 		'@typescript-eslint/restrict-template-expressions': 0,
 		'@typescript-eslint/return-await': [2, 'in-try-catch'],
-		'@typescript-eslint/sort-type-union-intersection-members': 2,
+		'@typescript-eslint/sort-type-union-intersection-members': 0,
 		'@typescript-eslint/strict-boolean-expressions': 0,
 		'@typescript-eslint/switch-exhaustiveness-check': 2,
 		'@typescript-eslint/triple-slash-reference': [
@@ -412,9 +411,7 @@ module.exports = {
 			{
 				markers: ['/'],
 			},
-		],
-		'typescript-sort-keys/interface': 2,
-		'typescript-sort-keys/string-enum': 2,
+		]
 	},
 	settings: {
 		jsdoc: {
