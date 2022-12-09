@@ -268,7 +268,7 @@ module.exports = {
 				before: true,
 			},
 		],
-		'@typescript-eslint/lines-between-class-members': [2, 'always'],
+		'@typescript-eslint/lines-between-class-members': 0,
 		'@typescript-eslint/no-array-constructor': 2,
 		'@typescript-eslint/no-dupe-class-members': 2,
 		'@typescript-eslint/no-duplicate-imports': 0,
