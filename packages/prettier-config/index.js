@@ -1,7 +1,7 @@
 require('./helper').modifyPrettierModule();
 
 module.exports = {
-    printWidth: 100,
+    printWidth: 80,
     endOfLine: 'lf',
 
     tabWidth: 4,
