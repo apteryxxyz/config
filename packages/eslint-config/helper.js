@@ -51,18 +51,16 @@ function ensureDependencies(dependencies = []) {
     const { execSync } = require('node:child_process');
 
     const packageJson = getParentPackageJson();
-    const [packageManager, addScript] = determineAddDependencyScript();
-    const fullAddScript = `${packageManager} ${addScript}`;
-
-    if (!packageManager)
-        throw new Error('Could not determine package manager');
-
     const missingDependencies = dependencies.filter(dep =>
         !packageJson.dependencies?.[dep] &&
         !packageJson.devDependencies?.[dep]);
-
     if (missingDependencies.length === 0) return;
 
+    const [packageManager, addScript] = determineAddDependencyScript();
+    if (!packageManager)
+        throw new Error('Could not determine package manager');
+
+    const fullAddScript = `${packageManager} ${addScript}`;
     const missingDependenciesString = missingDependencies.join(' ');
     const command = `${fullAddScript} ${missingDependenciesString}`;
 
