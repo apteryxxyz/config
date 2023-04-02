@@ -98,13 +98,7 @@ module.exports = {
 			},
 		],
 		'@typescript-eslint/no-confusing-non-null-assertion': 2,
-		'@typescript-eslint/no-confusing-void-expression': [
-			2,
-			{
-				ignoreArrowShorthand: true,
-				ignoreVoidOperator: false,
-			},
-		],
+		'@typescript-eslint/no-confusing-void-expression': 0,
 		'@typescript-eslint/no-duplicate-enum-values': 2,
 		'@typescript-eslint/no-dynamic-delete': 0,
 		'@typescript-eslint/no-empty-function': 0,
@@ -257,7 +251,7 @@ module.exports = {
 			},
 		],
 		'@typescript-eslint/default-param-last': 2,
-		'@typescript-eslint/dot-notation': 2,
+		'@typescript-eslint/dot-notation': 0,
 		'@typescript-eslint/func-call-spacing': [2, 'never'],
 		'@typescript-eslint/indent': [2, 4],
 		'@typescript-eslint/init-declarations': 0,

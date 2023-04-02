@@ -453,13 +453,7 @@ module.exports = {
         'no-useless-return': 2,
         'no-var': 2,
         'no-void': 0,
-        'no-warning-comments': [
-            1,
-            {
-                location: 'start',
-                terms: ['info', 'idea', 'todo', 'fixme'],
-            },
-        ],
+        'no-warning-comments': 0,
         'no-whitespace-before-property': 2,
         'no-with': 2,
         'nonblock-statement-body-position': [2, 'below'],
@@ -667,7 +661,7 @@ module.exports = {
         'unicorn/prefer-export-from': 2,
         'unicorn/prefer-includes': 2,
         'unicorn/prefer-json-parse-buffer': 0,
-        'unicorn/prefer-math-trunc': 2,
+        'unicorn/prefer-math-trunc': 0,
         'unicorn/prefer-modern-math-apis': 2,
         'unicorn/prefer-native-coercion-functions': 2,
         'unicorn/prefer-negative-index': 0,
