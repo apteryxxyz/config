@@ -76,7 +76,7 @@ module.exports = {
         'default-case-last': 2,
         'default-param-last': 2,
         'dot-location': [2, 'property'],
-        'dot-notation': 2,
+        'dot-notation': 0,
         'eol-last': 2,
         eqeqeq: 2,
         'for-direction': 2,
