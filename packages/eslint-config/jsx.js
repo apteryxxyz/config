@@ -37,8 +37,8 @@ module.exports = {
 				eventHandlerPropPrefix: 'on',
 			},
 		],
-		'react/jsx-indent': [4, 'space'],
-		'react/jsx-indent-props': [4, 'space'],
+		'react/jsx-indent': [2, 4],
+		'react/jsx-indent-props': [2, 4],
 		'react/jsx-key': [
 			2,
 			{
