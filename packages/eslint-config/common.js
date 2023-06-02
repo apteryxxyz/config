@@ -1,4 +1,4 @@
-require('./helper').ensureDependencies([
+require('./helpers').ensureDependencies([
     '@rushstack/eslint-patch',
     'eslint-plugin-import',
     'eslint-plugin-jsdoc',
