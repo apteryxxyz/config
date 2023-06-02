@@ -486,9 +486,9 @@ module.exports = {
         'unicode-bom': [2, 'never'],
         'unicorn/better-regex': 2,
         'unicorn/catch-error-name': [
-            'error',
+            2,
             {
-                name: 'error',
+                name: 2,
             },
         ],
         'unicorn/consistent-destructuring': 0,

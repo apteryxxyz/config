@@ -92,7 +92,7 @@ module.exports = {
                 '@typescript-eslint/no-dynamic-delete': 2,
                 '@typescript-eslint/no-empty-function': 0,
                 '@typescript-eslint/no-empty-interface': [
-                    'error',
+                    2,
                     {
                         allowSingleExtends: true,
                     },
@@ -146,7 +146,6 @@ module.exports = {
                 '@typescript-eslint/no-non-null-asserted-optional-chain': 2,
                 '@typescript-eslint/no-non-null-assertion': 0,
                 '@typescript-eslint/no-parameter-properties': 0,
-                '@typescript-eslint/no-require-imports': 2,
                 '@typescript-eslint/no-this-alias': [
                     2,
                     {
@@ -277,12 +276,6 @@ module.exports = {
                 '@typescript-eslint/no-loop-func': 2,
                 '@typescript-eslint/no-loss-of-precision': 2,
                 '@typescript-eslint/no-magic-numbers': 0,
-                '@typescript-eslint/no-redeclare': [
-                    2,
-                    {
-                        builtinGlobals: true,
-                    },
-                ],
                 '@typescript-eslint/no-restricted-imports': 0,
                 '@typescript-eslint/no-shadow': 0,
                 '@typescript-eslint/no-throw-literal': 2,
@@ -341,7 +334,6 @@ module.exports = {
                 'no-loop-func': 0,
                 'no-loss-of-precision': 0,
                 'no-magic-numbers': 0,
-                'no-redeclare': 0,
                 'no-restricted-imports': 0,
                 'no-return-await': 0,
                 'no-shadow': 0,

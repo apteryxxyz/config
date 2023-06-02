@@ -7,8 +7,8 @@ module.exports = {
     rules: {
         ...require('eslint-config-prettier').rules,
 
-        'arrow-body-style': 'off',
-        'line-comment-position': 'off',
-        'no-inline-comments': 'off',
+        'arrow-body-style': 0,
+        'line-comment-position': 0,
+        'no-inline-comments': 0,
     },
 };
