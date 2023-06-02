@@ -11,7 +11,7 @@ module.exports = {
         {
             files: ['*.ts', '*.tsx'],
             parser: '@typescript-eslint/parser',
-            plugins: ['@typescript-eslint', 'import', 'n', 'sonarjs', 'typescript-sort-keys'],
+            plugins: ['@typescript-eslint', 'import', 'n', 'sonarjs'],
             rules: {
                 '@typescript-eslint/adjacent-overload-signatures': 2,
                 '@typescript-eslint/array-type': [
