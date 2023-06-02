@@ -1,7 +1,29 @@
 {
-	"name": "config-apteryx",
-	"devDependencies": {
-		"eslint": "^8.37.0",
-		"prettier": "^2.8.7"
-	}
+    "name": "config-apteryx",
+    "version": "1.0.0",
+    "description": "Apteryx configuration",
+    "main": "index.js",
+    "workspaces": [
+        "packages/*"
+    ],
+    "author": {
+        "name": "Apteryx",
+        "url": "https://apteryx.xyz"
+    },
+    "repository": {
+        "type": "git",
+        "url": "git+https://github.com/apteryxxyz/config"
+    },
+    "bugs": {
+        "url": "https://github.com/apteryxxyz/config/issues"
+    },
+    "license": "MIT",
+    "scripts": {
+        "lint": "eslint .",
+        "format": "prettier --write ."
+    },
+    "devDependencies": {
+        "eslint": "^8.37.0",
+        "prettier": "^2.8.7"
+    }
 }

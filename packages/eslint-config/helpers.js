@@ -1,32 +1,16 @@
-/**
- * Get the root directory of the parent project.
- * @returns {string}
- */
+const { readFileSync } = require('node:fs');
+const { join } = require('node:path');
+const { execSync } = require('node:child_process');
 const getParentRoot = () => require('app-root-path').toString();
 
-/**
- * Get the package.json content of the parent project.
- * @returns {Record<string, any>}
- */
 function getParentPackageJson() {
-    const { readFileSync } = require('node:fs');
-    const { join } = require('node:path');
-
     const packageJsonPath = join(getParentRoot(), 'package.json');
     const packageJson = readFileSync(packageJsonPath, 'utf8');
 
     return JSON.parse(packageJson);
 }
 
-/**
- * Determine the package manager and add dependency script to use.
- * Add script will also be set to have as development dependency.
- * @returns {[string, string]}
- */
 function determineAddDependencyScript() {
-    const { existsSync } = require('node:fs');
-    const { join } = require('node:path');
-
     const root = getParentRoot();
 
     if (existsSync(join(root, 'package-lock.json')))
@@ -42,14 +26,7 @@ function determineAddDependencyScript() {
         return [null, null];
 }
 
-/**
- * Ensure a list of dependencies are installed.
- * @param {string[]} dependencies List of dependency names.
- * @returns {void}
- */
 function ensureDependencies(dependencies = []) {
-    const { execSync } = require('node:child_process');
-
     const packageJson = getParentPackageJson();
     const missingDependencies = dependencies.filter(dep =>
         !packageJson.dependencies?.[dep] &&

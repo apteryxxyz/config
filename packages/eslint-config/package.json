@@ -1,28 +1,11 @@
 {
     "name": "eslint-config-apteryx",
+    "version": "2.1.0",
     "description": "ESLint configuration for all Apteryx projects",
-    "version": "2.0.7",
-    "license": "MIT",
-    "author": {
-        "name": "ApteryxXYZ",
-        "email": "kiaora@apteryx.xyz"
-    },
-    "repository": {
-        "type": "git",
-        "url": "git+https://github.com/apteryxxyz/config",
-        "directory": "packages/eslint-config"
-    },
-    "bugs": {
-        "url": "https://github.com/apteryxxyz/config/issues"
-    },
-    "type": "commonjs",
     "main": "./common.js",
     "files": [
         "*.js"
     ],
-    "dependencies": {
-        "app-root-path": "^3.1.0"
-    },
     "keywords": [
         "eslint",
         "config",
@@ -33,5 +16,22 @@
         "prettier",
         "react",
         "typescript"
-    ]
+    ],
+    "author": {
+        "name": "Apteryx",
+        "url": "https://apteryx.xyz"
+    },
+    "repository": {
+        "type": "git",
+        "url": "git+https://github.com/apteryxxyz/config",
+        "directory": "packages/eslint-config"
+    },
+    "bugs": {
+        "url": "https://github.com/apteryxxyz/config/issues"
+    },
+    "license": "MIT",
+    "packageManager": "yarn@3.6.0",
+    "dependencies": {
+        "app-root-path": "^3.1.0"
+    }
 }

@@ -1,11 +1,28 @@
 {
     "name": "prettier-config-apteryx",
+    "version": "2.1.0",
     "description": "Prettier configuration for all Apteryx projects",
-    "version": "2.0.3",
-    "license": "MIT",
+    "main": "./index.js",
+    "files": [
+        "*.js"
+    ],
+    "scripts": {
+        "postinstall": "node patch.js"
+    },
+    "keywords": [
+        "prettier",
+        "config",
+        "prettierconfig",
+        "format",
+        "formatter",
+        "next",
+        "prettier",
+        "react",
+        "typescript"
+    ],
     "author": {
-        "name": "ApteryxXYZ",
-        "email": "kiaora@apteryx.xyz"
+        "name": "Apteryx",
+        "url": "https://apteryx.xyz"
     },
     "repository": {
         "type": "git",
@@ -15,23 +32,9 @@
     "bugs": {
         "url": "https://github.com/apteryxxyz/config/issues"
     },
-    "type": "commonjs",
-    "main": "./index.js",
-    "files": [
-        "*.js"
-    ],
+    "license": "MIT",
+    "packageManager": "yarn@3.6.0",
     "dependencies": {
         "app-root-path": "^3.1.0"
-    },
-    "keywords": [
-        "prettier",
-        "config",
-        "prettierconfig",
-        "lint",
-        "linter",
-        "next",
-        "prettier",
-        "react",
-        "typescript"
-    ]
+    }
 }

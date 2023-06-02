@@ -1,6 +1,7 @@
 {
     "compileOnSave": true,
     "compilerOptions": {
+
         // Type Checking
         "allowUnreachableCode": false,
         "allowUnusedLabels": false,
@@ -21,40 +22,43 @@
         "strictNullChecks": true,
         "strictPropertyInitialization": true,
         "useUnknownInCatchVariables": true,
+
         // Module
         "module": "commonjs",
         "moduleResolution": "node",
+
         // Emit
         "declaration": true,
         "downlevelIteration": true,
-        "importHelpers": false,
+        "importHelpers": true,
         "importsNotUsedAsValues": "remove",
+        "sourceMap": true,
         "inlineSourceMap": false,
         "inlineSources": false,
-        "newLine": "lf",
+        "newLine":"lf",
         "noEmit": false,
         "noEmitHelpers": false,
         "noEmitOnError": true,
         "preserveConstEnums": true,
         "removeComments": false,
-        "sourceMap": true,
         "stripInternal": true,
+
+        // Interop Constraints
+        "allowSyntheticDefaultImports": true,
+        "forceConsistentCasingInFileNames": true,
+        "esModuleInterop": true,
+
+        // Language and Environment
+        "lib": ["esnext", "dom"],
+        "target": "esnext",
+        "useDefineForClassFields": true,
+        "emitDecoratorMetadata": true,
+        "experimentalDecorators": true,
+        "skipLibCheck": true,
+
         // JavaScript Support
         "allowJs": true,
         "checkJs": false,
         "maxNodeModuleJsDepth": 0,
-        // Interop Constraints
-        "allowSyntheticDefaultImports": true,
-        "forceConsistentCasingInFileNames": true,
-        // Language and Environment
-        "emitDecoratorMetadata": true,
-        "experimentalDecorators": true,
-        "lib": [
-            "esnext"
-        ],
-        "target": "esnext",
-        "useDefineForClassFields": true,
-        // Completeness
-        "skipLibCheck": true
     }
 }

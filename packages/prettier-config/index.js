@@ -1,5 +1,3 @@
-require('./helper').modifyPrettierModule();
-
 module.exports = {
     printWidth: 80,
     endOfLine: 'lf',

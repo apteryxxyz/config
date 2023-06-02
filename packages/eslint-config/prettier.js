@@ -1,16 +1,14 @@
-require('./helper').ensureDependencies([
-	'eslint-config-prettier',
-	'eslint-plugin-prettier'
+require('./helpers').ensureDependencies([
+    'eslint-config-prettier',
+    'eslint-plugin-prettier'
 ]);
 
-const prettier = require('eslint-config-prettier');
-
 module.exports = {
-	rules: {
-		...prettier.rules,
+    rules: {
+        ...require('eslint-config-prettier').rules,
 
-		'arrow-body-style': 0,
-		'line-comment-position': 0,
-		'no-inline-comments': 0,
-	},
+        'arrow-body-style': 'off',
+        'line-comment-position': 'off',
+        'no-inline-comments': 'off',
+    },
 };

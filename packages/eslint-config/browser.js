@@ -1,4 +1,4 @@
-require('./helper').ensureDependencies([
+require('./helpers').ensureDependencies([
     'eslint-plugin-unicorn'
 ]);
 
@@ -8,11 +8,11 @@ module.exports = {
     },
     plugins: ['unicorn'],
     rules: {
-        'unicorn/prefer-dom-node-append': 2,
-        'unicorn/prefer-dom-node-dataset': 2,
-        'unicorn/prefer-dom-node-remove': 2,
-        'unicorn/prefer-dom-node-text-content': 2,
-        'unicorn/prefer-keyboard-event-key': 2,
-        'unicorn/prefer-modern-dom-apis': 2,
+        'unicorn/prefer-dom-node-append': 'error',
+        'unicorn/prefer-dom-node-dataset': 'error',
+        'unicorn/prefer-dom-node-remove': 'error',
+        'unicorn/prefer-dom-node-text-content': 'error',
+        'unicorn/prefer-keyboard-event-key': 'error',
+        'unicorn/prefer-modern-dom-apis': 'error',
     }
 };

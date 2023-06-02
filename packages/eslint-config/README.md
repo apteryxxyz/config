@@ -8,7 +8,7 @@ yarn add eslint eslint-config-apteryx
 pnpm add eslint eslint-config-apteryx
 ```
 
-Any additional dependencies - based on which configurations you decided to extend - will automatically be installed upon your first run of ESLint.
+Any additional dependencies - based on which configurations you decide to use - will automatically be installed upon your first run of ESLint.
 
 ## Usage
 
@@ -19,7 +19,6 @@ This package includes the following configurations:
 - [`apteryx/jsx`](./jsx.js) – for usage with [JSX](https://reactjs.org/docs/introducing-jsx.html) (with or without [React](https://reactjs.org/)).
 - [`apteryx/module`](./module.js) – for usage with ESM modules.
 - [`apteryx/next`](./next.js) – for usage with [Next.js](https://nextjs.org/).
-- [`apteryx/no-deprecated`](./no-deprecated.js) - for reporting deprecated APIs (very slow on big repos, especially monorepos).
 - [`apteryx/node`](./node.js) - for usage with Node.js.
 - [`apteryx/prettier`](./prettier.js) - for usage with [Prettier](https://prettier.io/).
 - [`apteryx/react`](./react.js) - for usage with [React](https://reactjs.org/).

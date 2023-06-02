@@ -1,10 +1,20 @@
 {
     "name": "ts-config-apteryx",
+    "version": "2.1.0",
     "description": "TypeScript configuration for all Apteryx projects",
-    "version": "2.0.0",
+    "main": "./tsconfig.json",
+    "files": [
+        "*.json"
+    ],
+    "keywords": [
+        "ts",
+        "config",
+        "tsconfig",
+        "typescript"
+    ],
     "author": {
-        "name": "ApteryxXYZ",
-        "email": "kiaora@apteryx.xyz"
+        "name": "Apteryx",
+        "url": "https://apteryx.xyz"
     },
     "repository": {
         "type": "git",
@@ -14,21 +24,11 @@
     "bugs": {
         "url": "https://github.com/apteryxxyz/config/issues"
     },
-    "main": "./tsconfig.json",
-    "files": [
-        "*.json"
-    ],
+    "license": "MIT",
     "exports": {
         ".": {
             "import": "./tsconfig.json",
             "require": "./tsconfig.json"
         }
-    },
-    "license": "MIT",
-    "keywords": [
-        "ts",
-        "config",
-        "tsconfig",
-        "typescript"
-    ]
+    }
 }
