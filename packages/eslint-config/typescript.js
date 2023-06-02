@@ -41,7 +41,7 @@ module.exports = {
                         objectLiteralTypeAssertions: 'allow',
                     },
                 ],
-                '@typescript-eslint/consistent-type-definitions': [2, 'type'],
+                '@typescript-eslint/consistent-type-definitions': 0,
                 '@typescript-eslint/consistent-type-exports': [
                     2,
                     {
@@ -136,12 +136,7 @@ module.exports = {
                         checksVoidReturn: false,
                     },
                 ],
-                '@typescript-eslint/no-namespace': [
-                    2,
-                    {
-                        allowDeclarations: true,
-                    },
-                ],
+                '@typescript-eslint/no-namespace': 0,
                 '@typescript-eslint/no-non-null-asserted-nullish-coalescing': 2,
                 '@typescript-eslint/no-non-null-asserted-optional-chain': 2,
                 '@typescript-eslint/no-non-null-assertion': 0,
@@ -165,7 +160,7 @@ module.exports = {
                 '@typescript-eslint/no-unsafe-call': 0,
                 '@typescript-eslint/no-unsafe-member-access': 0,
                 '@typescript-eslint/no-unsafe-return': 0,
-                '@typescript-eslint/no-var-requires': 2,
+                '@typescript-eslint/no-var-requires': 0,
                 '@typescript-eslint/non-nullable-type-assertion-style': 0,
                 '@typescript-eslint/prefer-as-const': 2,
                 '@typescript-eslint/prefer-enum-initializers': 0,
@@ -217,12 +212,7 @@ module.exports = {
                 ],
                 '@typescript-eslint/type-annotation-spacing': 2,
                 '@typescript-eslint/typedef': 0,
-                '@typescript-eslint/unbound-method': [
-                    2,
-                    {
-                        ignoreStatic: true,
-                    },
-                ],
+                '@typescript-eslint/unbound-method': 0,
                 '@typescript-eslint/unified-signatures': 2,
 
                 // Eslint compatability
@@ -400,19 +390,4 @@ module.exports = {
             },
         },
     ],
-    settings: {
-        'import/parsers': {
-            '@typescript-eslint/parser': ['.ts', '.tsx', '.js', '.jsx', '.json', '.node'],
-        },
-        'import/resolvers': {
-            typescript: {
-                alwaysTryTypes: true,
-                project: ['tsconfig.eslint.json', 'apps/*/tsconfig.eslint.json', 'packages/*/tsconfig.eslint.json'],
-                extensions: ['.js', '.jsx', '.ts', '.tsx'],
-            },
-            node: {
-                extensions: ['.js', '.jsx', '.ts', '.tsx'],
-            },
-        },
-    },
 };

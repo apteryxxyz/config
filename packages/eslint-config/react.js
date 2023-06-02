@@ -25,7 +25,7 @@ module.exports = {
         'react/no-find-dom-node': 2,
         'react/no-invalid-html-attribute': 2,
         'react/no-is-mounted': 2,
-        'react/no-namespace': 2,
+        'react/no-namespace': 0,
         'react/no-redundant-should-component-update': 2,
         'react/no-render-return-value': 2,
         'react/no-set-state': 2,

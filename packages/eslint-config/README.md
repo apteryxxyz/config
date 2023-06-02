@@ -64,9 +64,6 @@ This package includes the following configurations:
         "apteryx/next",
         "apteryx/prettier"
     ],
-    "settings": {
-        "react": { "version": "detect" }
-    },
     "parserOptions": {
         "project": "./tsconfig.json"
     },

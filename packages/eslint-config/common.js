@@ -116,7 +116,7 @@ module.exports = {
         'import/dynamic-import-chunkname': 0,
         'import/export': 2,
         'import/exports-last': 0,
-        'import/extensions': [2, 'always', { ignorePackages: true }],
+        'import/extensions': 0,
         'import/first': 2,
         'import/group-exports': 0,
         'import/max-dependencies': 0,
@@ -627,8 +627,5 @@ module.exports = {
             },
         ],
         yoda: [2, 'never'],
-    },
-    settings: {
-        'import/extensions': ['.js', '.mjs', '.cjs', '.jsx', '.ts', '.mts', '.cts', '.tsx'],
-    },
+    }
 };
