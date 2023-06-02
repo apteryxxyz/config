@@ -1,3 +1,12 @@
+require('./helper').ensureDependencies([
+    '@rushstack/eslint-patch',
+    'eslint-plugin-import',
+    'eslint-plugin-jsdoc',
+    'eslint-plugin-unicorn',
+    'eslint-plugin-promise'
+]);
+require('@rushstack/eslint-patch/modern-module-resolution');
+
 module.exports = {
     env: {
         es6: true,
