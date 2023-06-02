@@ -488,7 +488,7 @@ module.exports = {
         'unicorn/catch-error-name': [
             2,
             {
-                name: 2,
+                name: 'error',
             },
         ],
         'unicorn/consistent-destructuring': 0,

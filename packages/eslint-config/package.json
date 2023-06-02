@@ -1,6 +1,6 @@
 {
     "name": "eslint-config-apteryx",
-    "version": "2.1.4",
+    "version": "2.1.5",
     "description": "ESLint configuration for all Apteryx projects",
     "main": "./common.js",
     "files": [
