@@ -33,7 +33,6 @@ module.exports = {
             },
         }],
         'n/exports-style': [2, 'module.exports'],
-        'n/prefer-global/buffer': 2,
 
         'unicorn/prefer-node-protocol': 2,
     },

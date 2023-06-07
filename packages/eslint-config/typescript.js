@@ -42,18 +42,6 @@ module.exports = {
                     },
                 ],
                 '@typescript-eslint/consistent-type-definitions': 0,
-                '@typescript-eslint/consistent-type-exports': [
-                    2,
-                    {
-                        fixMixedExportsWithInlineTypeSpecifier: true,
-                    },
-                ],
-                '@typescript-eslint/consistent-type-imports': [
-                    2,
-                    {
-                        prefer: 'type-imports',
-                    },
-                ],
                 '@typescript-eslint/explicit-function-return-type': 0,
                 '@typescript-eslint/explicit-member-accessibility': 2,
                 '@typescript-eslint/explicit-module-boundary-types': 0,
