@@ -1,4 +1,4 @@
-const { readFileSync } = require('node:fs');
+const { readFileSync, existsSync } = require('node:fs');
 const { join } = require('node:path');
 const { execSync } = require('node:child_process');
 const getParentRoot = () => require('app-root-path').toString();
